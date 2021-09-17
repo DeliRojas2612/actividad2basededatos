@@ -13,13 +13,11 @@ class Persona():
             self.personas[self.codigo] = (self.nombre, self.edad)
 
     def eliminarPersonas(self):
-        if len(self.personas) == 0:
-            print("No hay nada para eliminar.")
-        else:
-            self.cod = input("Ingrese el codigo de la persona que desea eliminar => ")
-            if (self.cod in self.personas):
+       
+           if self.cod = input("Ingrese el codigo de la persona que desea eliminar => ")
+            else (self.cod in self.personas):
                 print(f"Se eliminó {self.personas.pop(self.cod)}")
-            else:
+            else if:
                 print("Este codigo no existe")
 
     def mostrarPersonas(self):
@@ -55,13 +53,13 @@ def menu():
     while menu != 7:
 
         print("\nMENÚ")
-        print("1. Agregar Persona")
-        print("2. Eliminar Persona")
-        print("3. Mostrar Persona")
-        print("4. Agregar Empleado")
-        print("5. Eliminar Empleado")
-        print("6. Mostrar Empleado")
-        print("7. Salir")
+        print("1. Agregar Persona"--------------)
+        print("2. Eliminar Persona"-------------)
+        print("3. Mostrar Persona"--------------)
+        print("4. Agregar Empleado"-------------)
+        print("5. Eliminar Empleado"------------)
+        print("6. Mostrar Empleado"-------------)
+        print("7. Salir"-------------------)
         menu = int(input("Ingrese opción => "))
 
         if menu == 1:
@@ -96,10 +94,8 @@ def menu():
                 continua = continua.lower()
         elif menu == 6:
             e1.mostrarEmpleado()
-        elif menu == 7:
-            print("Finalizado")
         else:
-            print("Esta opción no existe")
+            print("el numero ingresado no es correcto")
 
 
 def inicio():
